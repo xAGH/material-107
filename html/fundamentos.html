@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos</title>
+    </head>
+    <body>
+        <h1>Título cambiado h1</h1>
+        <h2>Título h2</h2>
+        <h3>Título h3</h3>
+        <h4>Título h4</h4>
+        <h5>Título h5</h5>
+        <h6>Título h6</h6>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta hic
+            quos amet iusto delectus adipisci dolor voluptatem, a ad similique
+            pariatur, neque veritatis odit sapiente aliquam veniam sed
+            accusantium repellat!
+        </p>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+
+        <ol>
+            <li>
+                Frutas
+                <ul>
+                    <li>Banano</li>
+                    <li>Pera</li>
+                    <li>Manzana</li>
+                </ul>
+            </li>
+            <li>
+                Verduras
+                <ul>
+                    <li>Tomate</li>
+                    <li>Cebolla</li>
+                    <li>Pepino</li>
+                    <li>
+                        Tubérculos
+                        <ul>
+                            <li>Papa</li>
+                            <li>
+                                Otra mas
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>HTML no es un lenguaje de programación</dd>
+
+            <dt>CSS</dt>
+            <dd>En una herramienta de estilizado</dd>
+        </dl>
+
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+
+        <br />
+
+        <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnUq7W9UFdH45ibN6RlRxutjIQNAWk2Fyd-I7SSdx3uuPY3wln4n1e5IPdYXTfTNzbpefPsdNz42e4_CKuGkqq-oOYfqRfZXkJJ2m2Bs5PEg2JFZPdwCpHAg5hzpcw7ZriXw-3u1xMvrUK/s1600/Uniforme.jpg"
+            alt="Uniforme del SENA"
+        />
+
+        <img src="./images/jpg/imagen.jpg" />
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas sunt ducimus omnis possimus quisquam amet! Asperiores,
+                distinctio similique autem fuga blanditiis dolorum et vel
+                suscipit debitis repellat a molestiae consectetur.
+            </p>
+        </div>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Promedio notas</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Alejandro</td>
+                    <td>22</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Cristian</td>
+                    <td>29</td>
+                    <td>1.0</td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>32</td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td>Alejandra</td>
+                    <td>22</td>
+                    <td>2.0</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>2.0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- <form action="https://xagh.dev" method="get">
+            <h1>Mi formulario de registro</h1>
+
+            <label>Input text</label>
+            <input type="text" />
+            <br />
+            <label>Input nunber</label>
+            <input type="number" />
+            <br />
+            <label>Input checkbox</label>
+            <input type="checkbox" />
+            <br />
+            <label>Input color</label>
+            <input type="color" />
+            <br />
+            <label>Input date</label>
+            <input type="date" />
+            <br />
+            <label>Input datetime</label>
+            <input type="datetime" />
+            <br />
+            <label>Input nunber</label>
+            <input type="time" />
+            <br />
+            <label>Input email</label>
+            <input type="email" />
+            <br />
+            <label>Input password</label>
+            <input type="password" />
+            <br>
+            <input type="submit" />
+        </form> -->
+
+        <br /><br /><br />
+
+        <form>
+            <label for="input-email-1">Correo</label>
+            <input
+                type="email"
+                name="input-email"
+                id="input-email-1"
+                placeholder="alejo@email.com"
+                required
+                minlength="1"
+                maxlength="11"
+            />
+            <label for="input-age-1">Edad</label>
+            <input
+                type="number"
+                name="input-age"
+                id="input-age-1"
+                placeholder="Edad"
+                required
+                min="0"
+                max="100"
+                step="10"
+            />
+            <br />
+            <label for="input-month-1">Edad</label>
+            <input
+                type="date"
+                name="input-month"
+                id="input-month-1"
+                placeholder=""
+                required
+                min="2025-09-09"
+                max="2025-09-30"
+            />
+            <br />
+            <label for="input-password-1">Contraseña</label>
+            <input
+                type="password"
+                name="input-password"
+                id="input-password-1"
+                placeholder="Ingrese su contraseña"
+                required
+                minlength="8"
+            />
+            <br />
+            <label for="textarea-descripcion-1">Descripción</label>
+            <textarea
+                name="textarea-descripcion"
+                id="textarea-descripcion-1"
+                rows="5"
+            ></textarea>
+            <br />
+            <select name="select-pais">
+                <option value="CO">Colombia</option>
+                <option value="ES">España</option>
+                <option value="AR">Argentina</option>
+                <option value="PT">Portugal</option>
+            </select>
+            <br />
+            <br />
+
+            <div>
+                <label>Masculino</label>
+                <input name="genero" type="radio" />
+                <br />
+                <label>Femenino</label>
+                <input name="genero" type="radio" />
+                <br />
+                <label>Otros</label>
+                <input name="genero" type="radio" />
+            </div>
+
+            <div>
+                <label>Películas</label>
+                <input name="hobbies" type="checkbox" />
+                <br />
+                <label>Deporte</label>
+                <input name="hobbies" type="checkbox" />
+                <br />
+                <label>Juegos</label>
+                <input name="hobbies" type="checkbox" />
+            </div>
+
+            <input type="submit" />
+        </form>
+
+        <a href="https://www.facebook.com" target="_blank">
+            <img
+                src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo"
+                alt=""
+            />
+        </a>
+        <br />
+
+        <video autoplay loop controls>
+            <source src="./videos/Amigos.mov" type="video/mov" />
+            <source src="./videos/Amigos.mkv" type="video/mkv" />
+            <source src="./videos/Amigos.mp4" type="video/mp4" />
+        </video>
+
+        <audio controls>
+            <source src="./audios/Horse.ogg" />
+            <source src="./audios/Horse.wav" />
+            <source src="./audios/Horse.mp3" />
+        </audio>
+
+        <br />
+
+        <iframe
+            height="500px"
+            width="500px"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik"
+        >
+        </iframe>
+
+        <iframe
+            src="https://www.youtube.com/watch?v=ZkUs8TFCyq4"
+            width="500px"
+            height="500px"
+        ></iframe>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZkUs8TFCyq4?si=-7Glx0hnF41C8tcv"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+
+        <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/01v7BZ2AUh5DryWXqljbot?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+        ></iframe>
+        
+    </body>
+</html>

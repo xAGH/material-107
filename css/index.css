@@ -1,0 +1,29 @@
+.cuerpo {
+    background-color: antiquewhite;
+}
+
+.div1 {
+    background-color: cadetblue;
+    border: black 1px solid;
+    color: red;
+    font-size: 2em;
+}
+
+.div2 {
+    background-color: coral;
+    border: #FF00FF 10px dashed;
+}
+
+.p1 {
+    color: red;
+    background-color: white;
+}
+
+.p2 {
+    color: green;
+}
+
+/* px -> Pixel -> 20px
+% -> Porcentual -> 80%
+em -> 16px = 1em 
+rem -> Relative em */
